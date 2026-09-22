@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f2744">
+<title>شیفت‌ها</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/png;base64,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">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="شیفت‌ها">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/typeface-iransans@0.0.12/index.css" rel="stylesheet">
+<style>
+  :root {
+    --p0: #2563eb;
+    --p1: #0d9488;
+    --navy: #0f2744;
+    --navy2: #1e3a5f;
+    --bg: #e9eff7;
+    --card: rgba(255,255,255,.5);
+    --card-solid: rgba(255,255,255,.78);
+    --text: #1e293b;
+    --muted: #64748b;
+    --hol-bg: rgba(254,202,202,.55);
+    --hol-text: #b91c1c;
+    --border: rgba(255,255,255,.55);
+    --glass-shadow: 0 8px 28px rgba(15,39,68,.14);
+    --glass-shadow-lg: 0 14px 40px rgba(15,39,68,.2);
+    --shadow: var(--glass-shadow);
+    --shadow-lg: var(--glass-shadow-lg);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    display: flex; flex-direction: column;
+    height: 100vh; height: 100dvh;
+    overflow: hidden;
+    color: var(--text);
+    font-family: 'IRANSans', 'Vazirmatn', system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(37,99,235,.28), transparent 42%),
+      radial-gradient(circle at 88% 12%, rgba(20,184,166,.26), transparent 46%),
+      radial-gradient(circle at 20% 92%, rgba(15,39,68,.16), transparent 42%),
+      radial-gradient(circle at 92% 88%, rgba(37,99,235,.18), transparent 46%),
+      linear-gradient(160deg, #eef3fa 0%, #e3ebf6 100%);
+    background-attachment: fixed;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(to right, rgba(20,184,166,.78) 0%, rgba(13,148,136,.78) 25%, rgba(37,99,235,.78) 75%, rgba(29,78,216,.78) 100%);
+    backdrop-filter: blur(22px) saturate(170%);
+    -webkit-backdrop-filter: blur(22px) saturate(170%);
+    color: #fff;
+    padding: 5px 14px 6px;
+    border-radius: 0 0 26px 26px;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    box-shadow: 0 10px 30px rgba(15,39,68,.32), inset 0 1px 0 rgba(255,255,255,.45);
+    display: flex; align-items: center; justify-content: space-between;
+    flex: none; z-index: 2;
+    position: relative;
+    isolation: isolate;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0; z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255,255,255,.28), rgba(255,255,255,0) 55%);
+    pointer-events: none;
+  }
+  header button {
+    background: rgba(255,255,255,.18);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    color: #fff; border: 1px solid rgba(255,255,255,.4);
+    border-radius: 999px; padding: 8px 16px;
+    font-size: 14px; font-weight: 600;
+    line-height: 1.2;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 2px 8px rgba(0,0,0,.1);
+    transition: background .15s, box-shadow .15s;
+  }
+  header button:active { background: rgba(255,255,255,.35); box-shadow: inset 0 1px 4px rgba(0,0,0,.15); }
+  .title {
+    background: rgba(255,255,255,.18);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    color: #fff; border: 1px solid rgba(255,255,255,.4);
+    border-radius: 999px; padding: 8px 16px;
+    font-size: 14px; font-weight: 700; letter-spacing: -.2px;
+    line-height: 1.2;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 2px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: background .15s, box-shadow .15s;
+  }
+  .title:active { background: rgba(255,255,255,.35); box-shadow: inset 0 1px 4px rgba(0,0,0,.15); }
+
+  /* ── Weekday labels ── */
+  .wk {
+    display: grid; grid-template-columns: repeat(7,1fr);
+    gap: 4px; padding: 3px 8px 2px; flex: none;
+  }
+  .wk div {
+    color: var(--muted); text-align: center;
+    font-size: 13px; font-weight: 700;
+    padding: 2px 2px;
+    background: var(--card);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.6);
+    white-space: nowrap; overflow: hidden;
+  }
+  .wk .f { color: var(--hol-text); }
+
+  /* ── Calendar grid ── */
+  #grid {
+    flex: 1; min-height: 0;
+    display: grid; grid-template-columns: repeat(7,1fr);
+    gap: 3px; padding: 3px 6px 4px;
+  }
+  .day {
+    background: var(--card);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.65);
+    padding: 2px;
+    display: flex; flex-direction: column; gap: 1px;
+    min-height: 0; min-width: 0; overflow: hidden;
+    transition: box-shadow .15s, background .15s;
+  }
+  .day.empty { background: transparent; box-shadow: none; border: none; backdrop-filter: none; }
+  .day.hol { background: var(--hol-bg); }
+  .day.today { background: rgba(253,230,138,.6); }
+
+  .day-head {
+    display: flex; align-items: center; justify-content: center;
+    gap: 4px; flex: none; width: 100%;
+  }
+  .dn {
+    min-width: 32px; height: 28px; border-radius: 14px;
+    padding: 0 5px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 21px; font-weight: 900;
+    user-select: none; -webkit-user-select: none; flex: none;
+    color: var(--text);
+  }
+  .day.hol .dn { color: var(--hol-text); }
+  .ndot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: #1e293b;
+    flex: none; cursor: pointer;
+    box-shadow: 0 0 0 2px transparent;
+    transition: background .15s, box-shadow .15s, transform .1s;
+  }
+  .ndot.note-17 { background: #7c3aed; box-shadow: 0 0 0 2px #c4b5fd; }
+  .ndot.note-other { background: #eab308; box-shadow: 0 0 0 2px #fde68a; }
+  .ndot.conflict { background: #f97316; box-shadow: 0 0 0 2px #fed7aa; }
+  .ndot.conflict.note-17 { background: #f97316; box-shadow: 0 0 0 2px #c4b5fd; }
+  .ndot.conflict.note-other { background: #f97316; box-shadow: 0 0 0 2px #fde68a; }
+  .ndot:active { transform: scale(1.35); }
+
+  /* ── Shift chips ── */
+  .chip {
+    --c: #2563eb;
+    flex: 1; min-height: 0; width: 100%;
+    padding: 0;
+    border: 1.5px dashed color-mix(in srgb, var(--c) 40%, white);
+    border-radius: 9px;
+    background: color-mix(in srgb, var(--c) 8%, rgba(255,255,255,.35));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: var(--c);
+    font-size: 23px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    white-space: nowrap; overflow: hidden;
+    transition: all .12s;
+  }
+  .chip.p1 { --c: #0d9488; }
+
+  .chip.on {
+    border-style: solid;
+    border-color: rgba(255,255,255,.4);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 3px 10px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.55), inset 0 -8px 14px rgba(0,0,0,.08);
+  }
+
+  .chip.p0.on.M  { background: linear-gradient(165deg, #3b82f6, #1d4ed8); border-color: rgba(255,255,255,.45); }
+  .chip.p0.on.E  { background: linear-gradient(165deg, #60a5fa, #3b82f6); border-color: rgba(255,255,255,.45); }
+  .chip.p0.on.N  { background: linear-gradient(165deg, #1e40af, #1e3a8a); border-color: rgba(255,255,255,.3); }
+  .chip.p0.on.LD { background: linear-gradient(165deg, #93c5fd, #2563eb); border-color: rgba(255,255,255,.45); }
+  .chip.p0.on.MN { background: linear-gradient(165deg, #818cf8, #4338ca); border-color: rgba(255,255,255,.4); }
+  .chip.p0.on.EN { background: linear-gradient(165deg, #38bdf8, #0284c7); border-color: rgba(255,255,255,.4); }
+  .chip.p0.on.F  { background: linear-gradient(165deg, #a5b4fc, #4f46e5); border-color: rgba(255,255,255,.4); }
+
+  .chip.p1.on.M  { background: linear-gradient(165deg, #34d399, #047857); border-color: rgba(255,255,255,.45); }
+  .chip.p1.on.E  { background: linear-gradient(165deg, #6ee7b7, #10b981); border-color: rgba(255,255,255,.45); }
+  .chip.p1.on.N  { background: linear-gradient(165deg, #065f46, #064e3b); border-color: rgba(255,255,255,.3); }
+  .chip.p1.on.LD { background: linear-gradient(165deg, #a7f3d0, #059669); border-color: rgba(255,255,255,.45); }
+  .chip.p1.on.MN { background: linear-gradient(165deg, #5eead4, #0f766e); border-color: rgba(255,255,255,.4); }
+  .chip.p1.on.EN { background: linear-gradient(165deg, #86efac, #16a34a); border-color: rgba(255,255,255,.4); }
+  .chip.p1.on.F  { background: linear-gradient(165deg, #6ee7b7, #15803d); border-color: rgba(255,255,255,.4); }
+
+  .chip.on.H {
+    background: rgba(254,242,242,.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #dc2626;
+    border: 2px solid rgba(252,165,165,.7);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+  }
+
+  footer {
+    flex: none;
+    background: var(--card-solid);
+    backdrop-filter: blur(22px) saturate(160%);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    border-top: 1px solid var(--border);
+    border-radius: 22px 22px 0 0;
+    box-shadow: 0 -8px 26px rgba(15,39,68,.12), inset 0 1px 0 rgba(255,255,255,.7);
+    padding: 6px 12px calc(6px + env(safe-area-inset-bottom));
+  }
+  table.sum {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    text-align: center;
+    border: 1px solid rgba(148,163,184,.4);
+    background: rgba(226,232,240,.55);
+    border-radius: 12px; overflow: hidden;
+  }
+  .sum th {
+    background: rgba(203,213,225,.85);
+    backdrop-filter: blur(6px);
+    font-size: 14px; color: var(--navy);
+    padding: 5px 2px; font-weight: 800;
+  }
+  .sum td {
+    padding: 6px 2px;
+    border-top: 1px solid rgba(148,163,184,.35);
+    font-size: 17px;
+  }
+  .sum tbody tr:nth-child(1) { background: rgba(37,99,235,.14); }
+  .sum tbody tr:nth-child(2) { background: rgba(13,148,136,.14); }
+  .sum .pl {
+    text-align: start; padding-right: 8px; padding-left: 3px;
+    white-space: nowrap; font-weight: 700; font-size: 16px;
+  }
+  .sum td.pl i {
+    display: inline-block; width: 11px; height: 11px;
+    border-radius: 3px; margin-left: 6px; vertical-align: middle;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.5);
+  }
+  .sum td.hrs { font-weight: 800; font-size: 18px; }
+
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .tools button {
+    flex: 1 1 40%; padding: 10px 4px;
+    border: 1px solid rgba(148,163,184,.5);
+    background: rgba(203,213,225,.7);
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    color: var(--navy);
+    border-radius: 999px; font-size: 14px; font-weight: 700;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+    transition: background .15s;
+  }
+  .tools button:active { background: rgba(148,163,184,.85); }
+</style>
+</head>
+<body>
+<header>
+  <button id="prev">ماه قبل</button>
+  <div class="title" id="title"></div>
+  <button id="next">ماه بعد</button>
+</header>
+<div class="wk">
+  <div>شنبه</div><div>یکشنبه</div><div>دوشنبه</div><div>سه‌شنبه</div><div>چهارشنبه</div><div>پنجشنبه</div><div class="f">جمعه</div>
+</div>
+<div id="grid"></div>
+<footer>
+  <div id="sum"></div>
+  <div class="tools">
+    <button id="names">🏢 نام محل‌ها</button>
+    <button id="hours">⏱ ساعت شیفت‌ها</button>
+    <button id="clear">🗑 پاک کردن</button>
+    <button id="help">❓ راهنما</button>
+  </div>
+</footer>
+<script>
+const DAY = 864e5;
+const FMT = new Intl.DateTimeFormat('en-US-u-ca-persian-nu-latn', {
+  year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'UTC'
+});
+function jp(ms) {
+  const o = {};
+  for (const p of FMT.formatToParts(ms))
+    if (p.type === 'year' || p.type === 'month' || p.type === 'day') o[p.type] = +p.value;
+  return o;
+}
+function first(y, m) {
+  let t = Date.UTC(y + 621, 2, 21, 12) + Math.round((m - 1) * 30.4) * DAY;
+  const target = y * 100 + m;
+  for (let i = 0; i < 80; i++) {
+    const p = jp(t), k = p.year * 100 + p.month;
+    if (k === target) return t - (p.day - 1) * DAY;
+    t += (k < target ? 1 : -1) * DAY;
+  }
+  return t;
+}
+function len(y, m) {
+  return Math.round((first(m === 12 ? y + 1 : y, m === 12 ? 1 : m + 1) - first(y, m)) / DAY);
+}
+
+const MONTHS = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+const DAYS = ['یکشنبه','دوشنبه','سه‌شنبه','چهارشنبه','پنجشنبه','جمعه','شنبه'];
+const FIXED = new Set(['1-1','1-2','1-3','1-4','1-12','1-13','3-14','3-15','11-22','12-29']);
+const CYCLE = ['','LD','N','M','E','H','MN','EN','F'];
+
+const COMP = {
+  M:  ['M'],
+  E:  ['E'],
+  N:  ['N'],
+  H:  ['H'],
+  LD: ['M','E'],
+  MN: ['M','N'],
+  EN: ['E','N'],
+  F:  ['M','E','N']
+};
+
+const fa = s => String(s).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]).replace('.', '٫');
+
+const load = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
+const save = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+
+let shifts = load('shifts_v4', {});
+let names  = load('names_v3', ['تامین', 'سپاه']);
+let hrs    = load('hours_v4', [
+  { M: 7.25, E: 6.5, N: 13, H: 7.25 },
+  { M: 7,    E: 6.5, N: 12, H: 7.25 }
+]);
+let custom = load('holidays_v1', {});
+let notes  = load('notes_v1', {});
+
+const now = new Date();
+const t = jp(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), 12));
+const today = t.year * 10000 + t.month * 100 + t.day;
+let Y = t.year, M = t.month;
+
+function chipLabel(c) {
+  return c;
+}
+
+const TAMIN_HOURS = {
+  M:  { normal: 7.25,  thu: 8.7,  holiday: 10.25 },
+  E:  { normal: 6.5,   thu: 7.8,  holiday: 9.5 },
+  LD: { normal: 12.75, thu: 15.3, holiday: 18.75 },
+  MN: { normal: 26.25, thu: 27.7, holiday: 29.25 },
+  EN: { normal: 24.5,  thu: 25.8, holiday: 27.5 }
+};
+
+function calcBaseHours(p, c) {
+  if (c === 'H') return hrs[p].H || 0;
+  if (c === 'N') return p === 0 ? 13 : 12;
+  if (p === 0 && TAMIN_HOURS[c]) return TAMIN_HOURS[c].normal;
+  if (p === 1 && c === 'LD') return 13;
+  if (p === 1 && c === 'MN') return 19;
+  if (p === 1 && c === 'EN') return 18;
+  const comps = COMP[c] || [c];
+  let add = 0;
+  for (const co of comps) add += (hrs[p][co] || 0);
+  return add;
+}
+
+function calcHours(p, c, hol, isThu) {
+  if (c === 'H') return hrs[p].H || 0;
+  if (c === 'N') return p === 0 ? 19 : 18;
+  if (p === 0 && TAMIN_HOURS[c]) {
+    const t = TAMIN_HOURS[c];
+    if (hol) return t.holiday;
+    if (isThu) return t.thu;
+    return t.normal;
+  }
+  if (p === 1 && c === 'LD') return 13 * (hol ? 1.5 : 1);
+  if (p === 1 && c === 'MN') return 19 * (hol ? 1.5 : 1);
+  if (p === 1 && c === 'EN') return 18 * (hol ? 1.5 : 1);
+  const comps = COMP[c] || [c];
+  let add = 0;
+  for (const co of comps) {
+    if (co === 'H') { add += (hrs[p].H || 0); continue; }
+    if (co === 'N') {
+      add += (hrs[p].N || 0) * 1.5;
+      continue;
+    }
+    let h = hrs[p][co] || 0;
+    let coef = 1;
+    if (hol) coef = 1.5;
+    else if (isThu && p === 0) coef = 1.2;
+    add += h * coef;
+  }
+  return add;
+}
+
+function hasConflict(id) {
+  const c0 = shifts[id + '|0'] || '';
+  const c1 = shifts[id + '|1'] || '';
+  if (!c0 || !c1) return false;
+  const a = new Set(COMP[c0] || [c0]);
+  const b = new Set(COMP[c1] || [c1]);
+  for (const x of a) if (b.has(x)) return true;
+  return false;
+}
+
+const PART_FA = { M: 'صبح', E: 'عصر', N: 'شب', H: 'مرخصی' };
+
+function conflictMsg(id) {
+  const c0 = shifts[id + '|0'] || '';
+  const c1 = shifts[id + '|1'] || '';
+  if (!c0 || !c1) return '';
+  const a = COMP[c0] || [c0];
+  const b = COMP[c1] || [c1];
+  const shared = a.filter(x => b.includes(x));
+  if (!shared.length) return '';
+  const parts = shared.map(x => PART_FA[x] || x).join(' و ');
+  return '⚠️ تداخل در «' + parts + '»\n' +
+    names[0] + ': ' + chipLabel(c0) + '  |  ' +
+    names[1] + ': ' + chipLabel(c1);
+}
+
+function clearDayShifts(id) {
+  let changed = false;
+  for (let p = 0; p < 2; p++) {
+    const key = id + '|' + p;
+    if (shifts[key]) { delete shifts[key]; changed = true; }
+  }
+  if (notes[id]) { delete notes[id]; changed = true; save('notes_v1', notes); }
+  if (changed) {
+    save('shifts_v4', shifts);
+    render();
+  }
+}
+
+function openNote(id) {
+  const conf = hasConflict(id);
+  const cur = notes[id] || '';
+  const v = prompt(
+    (conf ? 'تداخل شیفت در این روز!\n' + conflictMsg(id) + '\n\n' : '') +
+    'توضیحات این روز:\n(عدد ۱۷ فقط برای شیفت LD «' + names[1] + '» مجاز است)',
+    cur
+  );
+  if (v === null) return;
+  let text = v.trim();
+  if (/(^|[^\d])17([^\d]|$)/.test(text)) {
+    const c1 = shifts[id + '|1'] || '';
+    if (c1 !== 'LD') {
+      alert('عدد ۱۷ فقط مخصوص شیفت LD محل «' + names[1] + '» است.\nالان شیفت ' + names[1] + ' در این روز: ' + (c1 ? chipLabel(c1) : 'خالی'));
+      text = text.replace(/(^|[^\d])17(?=[^\d]|$)/g, '$1').replace(/\s+/g, ' ').trim();
+    }
+  }
+  if (text) notes[id] = text; else delete notes[id];
+  save('notes_v1', notes);
+  render();
+}
+
+function render() {
+  document.getElementById('title').textContent = MONTHS[M - 1] + ' ' + fa(Y);
+  const f = first(Y, M), n = len(Y, M);
+  const off = (new Date(f).getUTCDay() + 1) % 7;
+  const weeks = Math.ceil((off + n) / 7);
+  const grid = document.getElementById('grid');
+  grid.style.gridTemplateRows = `repeat(${weeks}, 1fr)`;
+
+  let html = '';
+  for (let i = 0; i < off; i++) html += '<div class="day empty"></div>';
+
+  const cnt = [{}, {}], hours = [0, 0], baseHours = [0, 0];
+
+  const shiftTypes = CYCLE.filter(x => x && x !== 'H');
+  const hourRange = [0, 1].map(p => {
+    const vals = shiftTypes.map(c => calcBaseHours(p, c));
+    return { min: Math.min(...vals), max: Math.max(...vals) };
+  });
+  const HUE = [220, 168];
+
+  function chipStyle(p, c, baseVal) {
+    if (!c || c === 'H') return '';
+    const rng = hourRange[p];
+    const t = rng.max > rng.min ? Math.min(1, Math.max(0, (baseVal - rng.min) / (rng.max - rng.min))) : 0;
+    const light = 64 - t * 36;
+    const light2 = Math.min(light + 16, 90);
+    const hue = HUE[p];
+    return ` style="background:linear-gradient(165deg, hsl(${hue},72%,${light2}%), hsl(${hue},80%,${light}%));border-color:rgba(255,255,255,.45);"`;
+  }
+
+  for (let d = 1; d <= n; d++) {
+    const id = Y * 10000 + M * 100 + d;
+    const js = new Date(f + (d - 1) * DAY).getUTCDay();
+    const hol = js === 5 || FIXED.has(M + '-' + d) || !!custom[id];
+    const isThu = js === 4;
+
+    const conf = hasConflict(id);
+    const is17 = !!(notes[id] && /(^|[^\d])17([^\d]|$)/.test(notes[id]));
+    const hasOtherNote = !!(notes[id] && !is17);
+    let noteCls = '';
+    if (is17) noteCls = ' note-17';
+    else if (hasOtherNote) noteCls = ' note-other';
+    const tip = conf ? 'تداخل شیفت' : (is17 ? 'توضیح ۱۷' : (hasOtherNote ? 'دارای توضیح' : 'نگه‌دار برای توضیح'));
+    html += `<div class="day${hol ? ' hol' : ''}${id === today ? ' today' : ''}">` +
+            `<div class="day-head">` +
+            `<div class="dn" data-day="${id}">${fa(d)}</div>` +
+            `<span class="ndot${conf ? ' conflict' : ''}${noteCls}" data-note="${id}" title="${tip}"></span>` +
+            `</div>`;
+
+    for (let p = 0; p < 2; p++) {
+      const c = shifts[id + '|' + p] || '';
+      if (c) {
+        const comps = COMP[c] || [c];
+        for (const co of comps) {
+          cnt[p][co] = (cnt[p][co] || 0) + 1;
+        }
+        let h, base;
+        if (is17 && p === 1 && c === 'LD') {
+          base = (hrs[p].M || 0) + (hrs[p].E || 0) / 2;
+          h = base * (hol ? 1.5 : 1);
+        } else {
+          base = calcBaseHours(p, c);
+          h = calcHours(p, c, hol, isThu);
+        }
+        hours[p] += h;
+        baseHours[p] += base;
+      }
+      html += `<button class="chip p${p}${c ? ' on ' + c : ''}" data-id="${id}" data-p="${p}"${chipStyle(p, c, calcBaseHours(p, c))}>${chipLabel(c)}</button>`;
+    }
+    html += '</div>';
+  }
+  grid.innerHTML = html;
+
+  const types = ['M', 'E', 'N', 'H'];
+  const labels = { M: 'صبح', E: 'عصر', N: 'شب', H: 'مرخصی' };
+  let s = '<table class="sum"><thead><tr><th class="pl">محل کار</th>';
+  for (const t of types) s += `<th>${labels[t]}</th>`;
+  s += '<th>بهره‌وری</th><th>حضور فیزیکی</th><th>جمع ساعت</th></tr></thead><tbody>';
+
+  for (let p = 0; p < 2; p++) {
+    const g = c => fa(cnt[p][c] || 0);
+    const base = Math.round(baseHours[p] * 100) / 100;
+    const prod = Math.round((hours[p] - baseHours[p]) * 100) / 100;
+    const total = Math.round(hours[p] * 100) / 100;
+    s += `<tr><td class="pl"><i style="background:var(--p${p})"></i>${names[p]}</td>`;
+    for (const t of types) s += `<td>${g(t)}</td>`;
+    s += `<td class="hrs" style="color:#d97706">${fa(prod)}</td>`;
+    s += `<td class="hrs" style="color:#64748b">${fa(base)}</td>`;
+    s += `<td class="hrs" style="color:var(--p${p})">${fa(total)}</td></tr>`;
+  }
+  s += '</tbody></table>';
+  document.getElementById('sum').innerHTML = s;
+}
+
+document.getElementById('grid').addEventListener('click', e => {
+  const b = e.target.closest('.chip');
+  if (!b) return;
+  const key = b.dataset.id + '|' + b.dataset.p;
+  const cur = shifts[key] || '';
+  const next = CYCLE[(CYCLE.indexOf(cur) + 1) % CYCLE.length];
+  if (next) shifts[key] = next; else delete shifts[key];
+  save('shifts_v4', shifts);
+  render();
+});
+
+(function () {
+  let timer = null, held = false;
+  const grid = document.getElementById('grid');
+  const start = e => {
+    const dn = e.target.closest('.dn');
+    if (!dn) return;
+    held = false;
+    const id = dn.dataset.day;
+    timer = setTimeout(() => {
+      timer = null;
+      held = true;
+      clearDayShifts(id);
+    }, 500);
+  };
+  const cancel = () => { if (timer) { clearTimeout(timer); timer = null; } };
+  grid.addEventListener('touchstart', start, { passive: true });
+  grid.addEventListener('mousedown', e => { if (e.target.closest('.dn')) start(e); });
+  grid.addEventListener('touchend', cancel);
+  grid.addEventListener('touchmove', cancel);
+  grid.addEventListener('mouseup', cancel);
+  grid.addEventListener('mouseleave', cancel);
+  grid.addEventListener('click', e => {
+    const dn = e.target.closest('.dn');
+    if (!dn) return;
+    if (held) { held = false; return; }
+    const id = dn.dataset.day;
+    if (custom[id]) delete custom[id]; else custom[id] = true;
+    save('holidays_v1', custom);
+    render();
+  });
+})();
+
+(function () {
+  let timer = null, opened = false;
+  const grid = document.getElementById('grid');
+  const start = e => {
+    const dot = e.target.closest('.ndot');
+    if (!dot) return;
+    opened = false;
+    const id = dot.dataset.note;
+    timer = setTimeout(() => {
+      timer = null;
+      opened = true;
+      openNote(id);
+    }, 450);
+  };
+  const cancel = () => { if (timer) { clearTimeout(timer); timer = null; } };
+  grid.addEventListener('touchstart', start, { passive: true });
+  grid.addEventListener('mousedown', start);
+  grid.addEventListener('touchend', cancel);
+  grid.addEventListener('touchmove', cancel);
+  grid.addEventListener('mouseup', cancel);
+  grid.addEventListener('mouseleave', cancel);
+  grid.addEventListener('click', e => {
+    const dot = e.target.closest('.ndot');
+    if (!dot) return;
+    e.stopPropagation();
+    if (opened) { opened = false; return; }
+    openNote(dot.dataset.note);
+  });
+})();
+
+document.getElementById('prev').onclick = () => { if (M === 1) { M = 12; Y--; } else M--; render(); };
+document.getElementById('next').onclick = () => { if (M === 12) { M = 1; Y++; } else M++; render(); };
+
+document.getElementById('names').onclick = () => {
+  const a = prompt('نام محل اول:', names[0]); if (a === null) return;
+  const b = prompt('نام محل دوم:', names[1]); if (b === null) return;
+  names = [a.trim() || names[0], b.trim() || names[1]];
+  save('names_v3', names);
+  render();
+};
+
+document.getElementById('hours').onclick = () => {
+  const res = [];
+  for (let p = 0; p < 2; p++) {
+    const h = hrs[p];
+    const v = prompt(
+      'ساعت پایهٔ شیفت‌های ' + names[p] +
+      '\nبه ترتیب: صبح (M)، عصر (E)، شب (N)، مرخصی (H)\n' +
+      'ضریب تعطیل ۱٫۵ و پنجشنبه تامین ۱٫۲ جداگانه اعمال می‌شود\n(با کاما جدا کن)',
+      [h.M, h.E, h.N, h.H].join(',')
+    );
+    if (v === null) return;
+    const a = v.split(/[,،]/).map(x => parseFloat(x.trim()));
+    if (a.length !== 4 || a.some(isNaN)) {
+      alert('چهار عدد وارد کن، مثل 7,6.5,18,7');
+      return;
+    }
+    res.push({ M: a[0], E: a[1], N: a[2], H: a[3] });
+  }
+  hrs = res;
+  save('hours_v4', hrs);
+  render();
+};
+
+document.getElementById('clear').onclick = () => {
+  if (!confirm('همهٔ شیفت‌ها و توضیحات ماه «' + MONTHS[M - 1] + ' ' + fa(Y) + '» پاک شود؟')) return;
+  const n = len(Y, M);
+  let changed = false;
+  for (let d = 1; d <= n; d++) {
+    const id = Y * 10000 + M * 100 + d;
+    for (let p = 0; p < 2; p++) {
+      const key = id + '|' + p;
+      if (shifts[key]) { delete shifts[key]; changed = true; }
+    }
+    if (notes[id]) { delete notes[id]; changed = true; }
+  }
+  if (changed) {
+    save('shifts_v4', shifts);
+    save('notes_v1', notes);
+  }
+  render();
+};
+
+document.getElementById('title').onclick = () => {
+  const yStr = prompt('سال را وارد کنید:', String(Y));
+  if (yStr === null) return;
+  const y = parseInt(yStr, 10);
+  if (!y || y < 1300 || y > 1500) { alert('سال نامعتبر'); return; }
+  const list = MONTHS.map((name, i) => (i + 1) + ') ' + name).join('\n');
+  const mStr = prompt('شماره ماه را وارد کنید:\n' + list, String(M));
+  if (mStr === null) return;
+  const m = parseInt(mStr, 10);
+  if (!m || m < 1 || m > 12) { alert('ماه نامعتبر (۱ تا ۱۲)'); return; }
+  Y = y;
+  M = m;
+  render();
+};
+
+document.getElementById('help').onclick = () => {
+  alert(
+`📖 راهنمای جدول شیفت‌ها
+
+━━━ ثبت شیفت ━━━
+• روی خانهٔ خالی هر محل بزنید تا شیفت عوض شود
+• ترتیب: LD ← N ← M ← E ← H ← MN ← EN ← F ← خالی
+  LD = صبح+عصر | MN = صبح+شب | EN = عصر+شب | F = کامل
+  M = صبح | E = عصر | N = شب | H = مرخصی
+
+━━━ تاریخ روز ━━━
+• تپ کوتاه روی عدد تاریخ = تعطیل دستی روشن/خاموش
+• هولد (نگه‌داشتن) روی عدد تاریخ = پاک شدن شیفت‌ها و توضیحات آن روز
+
+━━━ نقطه کنار تاریخ ━━━
+• تپ یا هولد روی نقطه = افزودن/ویرایش توضیحات
+• مشکی = بدون توضیح
+• بنفش = توضیح شامل عدد ۱۷
+• زرد = توضیحات دیگر
+• نارنجی = تداخل شیفت بین دو محل
+
+━━━ عدد ۱۷ در توضیحات ━━━
+• فقط برای شیفت LD محل «سپاه» مجاز است
+• یعنی عصر نصف حساب می‌شود (+ ضریب تعطیل اگر باشد)
+
+━━━ محاسبه ساعت ━━━
+• تامین M: عادی ۷:۱۵ / تعطیل ۱۰:۱۵
+• تامین E: عادی ۶:۳۰ / تعطیل ۹:۳۰
+• تامین LD: عادی ۱۲:۴۵ / تعطیل ۱۸:۴۵
+• تامین MN: عادی ۲۶:۱۵ / تعطیل ۲۹:۱۵
+• تامین EN: عادی ۲۴:۳۰ / تعطیل ۲۷:۳۰
+• تامین N (شب): پایه ۱۳ ساعت، بهره‌وری ۱۹ ساعت (ثابت)
+• پنجشنبهٔ غیرتعطیل تامین: فقط صبح/عصر × ۱٫۲ (M=۸:۴۲، E=۷:۴۸، LD=۱۵:۱۸، MN=۲۷:۴۲، EN=۲۵:۴۸) — جزء شب دست‌نخورده
+• سپاه: صبح ۷ · عصر ۶٫۵
+• سپاه N (شب): پایه ۱۲ ساعت، بهره‌وری ۱۸ ساعت (ثابت)
+• سپاه شیفت LD: ثابت ۱۳ ساعت
+• سپاه شیفت MN: ثابت ۱۹ ساعت · سپاه شیفت EN: ثابت ۱۸ ساعت
+• روز تعطیل سپاه (LD/MN/EN): × ۱٫۵
+• بهره‌وری = ساعت اضافه‌شده به‌خاطر ضرایب
+• حضور فیزیکی = مجموع ساعت بدون هیچ ضریب
+• جمع ساعت = حضور فیزیکی + بهره‌وری
+
+━━━ جابجایی ماه ━━━
+• دکمه‌های ماه قبل / ماه بعد
+• تپ روی نام ماه (وسط هدر) = انتخاب مستقیم ماه و سال
+
+━━━ دکمه‌های پایین ━━━
+• نام محل‌ها = تغییر نام دو محل کار
+• ساعت شیفت‌ها = تنظیم ساعت پایه
+• پاک کردن = حذف همه شیفت‌ها و توضیحات ماه جاری
+• راهنما = همین صفحه`
+  );
+};
+
+render();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
